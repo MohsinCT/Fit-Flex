@@ -1,0 +1,20 @@
+ AppBar(
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.black, Colors.white], // Black and white gradient
+              begin: Alignment.bottomCenter,
+              end: Alignment.topLeft,
+            ),
+            image: DecorationImage(
+              image: AssetImage(
+                  'assets/your_background_image.jpg'), // Replace with your image asset
+              fit: BoxFit.cover,
+              colorFilter: ColorFilter.mode(
+                Colors.black
+                    .withOpacity(0.9), // Adjust the overlay color and opacity
+                BlendMode.darken,
+              ),
+            ),
+          ),
+        ),
